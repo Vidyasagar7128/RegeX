@@ -7,6 +7,8 @@ namespace Regx
         static void Main(string[] args)
         {
             Console.WriteLine("RegeX Programs!");
+            Patterns patterns = new Patterns();
+            patterns.Pattern();
         }
     }
 }
