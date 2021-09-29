@@ -27,7 +27,7 @@ namespace Regx
             //Enter Password
             Console.Write("Enter password(Min 8 char): ");
             string pass = Console.ReadLine();
-            Regex rxPass = new Regex(@"^(?=.*[a-z])(?=.*[A-Z]){8,}.+$");
+            Regex rxPass = new Regex(@"^(?=.*[a-zA-Z])(?=.*[0-9]){8,}.+$");
             Console.WriteLine($"First Name is: {rxName.Match(name)}");
             Console.WriteLine($"last Name is: {rxName.Match(lastName)}");
             Console.WriteLine($"Mobile is: {rxMobile.Match(mobile)}");
