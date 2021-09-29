@@ -27,16 +27,16 @@ namespace Regx
             //Enter Password
             Console.Write("Enter password(Min 8 char): ");
             string pass = Console.ReadLine();
-            Regex rxPass = new Regex(@"^[A-Za-z]{8,}$");
+            Regex rxPass = new Regex(@"^(?=.*[a-z])(?=.*[A-Z]){8,}.+$");
             Console.WriteLine($"First Name is: {rxName.Match(name)}");
             Console.WriteLine($"last Name is: {rxName.Match(lastName)}");
             Console.WriteLine($"Mobile is: {rxMobile.Match(mobile)}");
             Console.WriteLine($"Email is : {rxEmail.Match(email)}");
-            Console.WriteLine("---------------------------------");
             if (rxPass.IsMatch(pass))
                 Console.WriteLine($"Password: {pass}");
             else
                 Console.WriteLine($"Password length min 8");
+            Console.WriteLine("---------------------------------");
             Pattern();
         }
     }
