@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RegexTest
+namespace Regx
 {
-    class happyOrSad
+    public class HappyOrSad
     {
         string mood = "";
-        public happyOrSad(string mood)
+        public HappyOrSad(string mood)
         {
             this.mood = mood;
         }
