@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace Regx
 {
-    class Patterns
+   public class Patterns
     {
         public void Pattern()
         {

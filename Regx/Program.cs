@@ -9,7 +9,7 @@ namespace Regx
             Console.WriteLine("RegeX Programs!");
             Patterns patterns = new Patterns();
             Emails emails = new Emails();
-            //patterns.Pattern();
+            patterns.Pattern();
             emails.EmailsFormatter();
         }
     }
